@@ -12,7 +12,7 @@ export default class Navigator extends Component {
       >
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/"><strong>LOGO</strong></a>
+            <a href="/"><strong>Coolhands Couriers</strong></a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -20,7 +20,7 @@ export default class Navigator extends Component {
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
               <div className='body-x'>
-                {!this.props.loggedIn && "Please log in."}
+                {!this.props.loggedIn && "Log in to place an order!"}
               </div>
             </NavItem>
             {this.props.loggedIn && <li><a name="signoff" onClick={this.props.logout}>Sign Off</a></li>}
